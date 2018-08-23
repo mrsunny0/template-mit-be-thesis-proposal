@@ -1,0 +1,125 @@
+%---------------------------------------------------------------------------%
+%								   Preamble									%
+%---------------------------------------------------------------------------%
+\documentclass[12pt, lettersize]{article}
+\usepackage{./preamble}
+\graphicspath{{../images/},{../images/poo}}
+\captionsetup{font=footnotesize}
+% note that graphics path should be encased in {}, ends with / to define directory, and finally separated by , without any lead or lag spaces
+%---------------------------------------------------------------------------%
+%								Begin Document								%
+%---------------------------------------------------------------------------%
+\begin{document}
+
+%------------------
+% Table of Contents
+%------------------
+\input{titlepage}
+\newpage
+
+%------------------
+% Table of Contents
+%------------------
+% \thispagestyle{empty}
+
+\tableofcontents 
+%\listoffigures 
+%\listoftables
+ 
+\newpage
+ 
+\pagenumbering{arabic}
+
+%-------------------------------------------------------------------------------------------------------------%
+% Abstract
+%-------------------------------------------------------------------------------------------------------------%
+\begin{abstract}
+Abstract should be no more than \textbf{300 words in 1 page}.
+\vspace{\baselineskip}
+
+\noindent State the significance of the proposed research. Include long-term objectives and specific aims. Describe concisely the research design and methods for achieving these objectives. Highlight the specific
+hypotheses to be tested, goals to be reached, or technology to be developed, which are intended to be
+your original contributions. Avoid summaries of past accomplishments.
+
+\end{abstract}
+
+%-------------------------------------------------------------------------------------------------------------%
+% Objective
+%-------------------------------------------------------------------------------------------------------------%
+\section{OBJECTIVE}
+Overall Objective \& Specific Aims should be \textbf{1 page maximum}.
+
+\subsection{OBJECTIVE SUBSECTION}
+\noindent Articulate the overall objective of your thesis project, and outline a set of specific aims by which your work
+is intended to accomplish this objective. Be sure to clearly state the hypotheses to be tested, goals to be
+reached, or technology to be developed.
+
+%-------------------------------------------------------------------------------------------------------------%
+% Background
+%-------------------------------------------------------------------------------------------------------------%
+\section{BACKGROUND}
+Background \& Significance section should be \textbf{3-5 pages}.
+
+\subsection{BACKGROUND SUBSECTION}
+\noindent Sketch the background leading to the present research, critically evaluate existing knowledge, and
+specifically identify the gaps that your research is intended to fill. State concisely the importance of the
+research described in this proposal by relating the specific aims to the broad, long-term objectives.
+
+%-------------------------------------------------------------------------------------------------------------%
+% Research Design & Methods
+%-------------------------------------------------------------------------------------------------------------%
+\section{METHODS} \label{section:methods}
+Research Design \& Methods section should be \textbf{3-5 pages}.
+
+\subsection{METHODS SUBSECTION}
+\noindent Along with the Objective \& Aims section, this is the most important part of the proposal. The majority of
+your time should be spent making this part of your proposal strong, direct, and completely clear. Describe
+the research design and the procedures to be used to accomplish the specific aims of the project; it is
+generally most effective to do this according to the same outline as in the Objective \& Aims section. Include
+how the data will be collected, analyzed, and interpreted. Describe any new methodology and its advantage
+over existing methodologies. Discuss the potential difficulties and limitations of the proposed procedures
+and alternative approaches to achieve the aims. As part of this section, provide a tentative timetable for the
+project. Point out any procedures, situations or materials that may be hazardous and the precautions to be
+exercised.
+
+%-------------------------------------------------------------------------------------------------------------%
+% Preliminary Results
+%-------------------------------------------------------------------------------------------------------------%
+\section{RESULTS}
+Preliminary Studies section should be \textbf{3-4 pages}. \\\\
+This section may be alternatively be located before the Research Design \& Methods Section \ref{section:methods}.
+
+\subsection{RESULTS SUBSECTION}
+\noindent Use this section to provide an account of your preliminary studies that are pertinent to your research project
+and that support your specific aims. Note: it is not necessary to have obtained a substantial amount of
+preliminary data in order to submit or defend the proposal, although it will be expected that you have begun
+to undertake some of the key methods to assess their feasibility.
+
+%-------------------------------------------------------------------------------------------------------------%
+% Bibliography
+%-------------------------------------------------------------------------------------------------------------%
+\newpage
+% \bibliographystyle{unsrt} % unsorted bibliography
+% \bibliography{./bib/..}
+
+% manual bib insertion
+\begin{thebibliography}{99} % means 1 digit of entries (<10)
+
+\bibitem{FSR}
+THIS IS A BIBITEM
+
+\end{thebibliography}
+
+%-------------------------------------------------------------------------------------------------------------%
+% Appendix
+%-------------------------------------------------------------------------------------------------------------%
+\newpage
+\appendix
+\section{APPENDIX}
+
+\subsection{SUB APPENDIX}
+
+%---------------------------------------------------------------------------%
+%								 End Document								%
+%---------------------------------------------------------------------------%
+\end{document}
