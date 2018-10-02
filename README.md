@@ -1,3 +1,29 @@
+<!-- TOC -->
+<!-- https://ecotrust-canada.github.io/markdown-toc/ -->
+- [Getting started](#getting-started)
+  * [Setting it up](#setting-it-up)
+  * [Downloads](#downloads)
+- [Things to know (in general) before diving in](#things-to-know--in-general--before-diving-in)
+  * [Knowing what _paths_ are](#knowing-what--paths--are)
+  * [How to navigate](#how-to-navigate)
+- [The makeup of a LaTeX document](#the-makeup-of-a-latex-document)
+  * [The document class](#the-document-class)
+  * [The preamble](#the-preamble)
+  * [Images](#images)
+  * [Bibliogrpahy](#bibliogrpahy)
+    + [Manual insertion](#manual-insertion)
+    + [Biblatex (\& Natbib)](#biblatex-----natbib-)
+    + [Where to get .bib files](#where-to-get-bib-files)
+  * [Breaking it down](#breaking-it-down)
+    + [\input \& \include commands](#-input-----include-commands)
+    + [\subfiles](#-subfiles)
+    + [How to reference subfiles, whether using \input or \subfiles, with one another](#how-to-reference-subfiles--whether-using--input-or--subfiles--with-one-another)
+    + [Another file structure](#another-file-structure)
+- [How to compile](#how-to-compile)
+  * [Basic compilation (for Texmaker)](#basic-compilation--for-texmaker-)
+  * [Bibliograph compilation (for Texmaker)](#bibliograph-compilation--for-texmaker-)
+ <!-- \END TOC -->
+
 # Getting started
 There are two fundamental categories for digital document writing. The first is plain text, where formatting is done through code. The second are word processors, documents that hide most to all of the formatting away from the user such that they experience an interface known as WYSIWYG (what you see is that you get), where bolded words are literally bolded on your document.
 
@@ -374,6 +400,11 @@ Where `../` is for the main document, and `../../` is for the subfiles (they liv
 
 # How to compile
 
-## Basic compilation
+## Basic compilation (for Texmaker)
+Quickbuild allows you to compile using default settings. The Quickbuild option can be modified in settings 
+![](./)
+If using Texmaker, you can type F6 to compile
+You can then visualize the compiled document using F7
+Caveats are that 
 
-## Bibliograph compilation
+## Bibliograph compilation (for Texmaker)
