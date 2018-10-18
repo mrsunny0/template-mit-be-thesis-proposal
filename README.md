@@ -1,5 +1,6 @@
 <!-- TOC -->
 <!-- https://ecotrust-canada.github.io/markdown-toc/ -->
+- [TL;DR](#TL;DR)
 - [Getting started](#getting-started)
   * [Setting it up](#setting-it-up)
   * [Downloads](#downloads)
@@ -23,6 +24,14 @@
   * [Basic compilation (for Texmaker)](#basic-compilation--for-texmaker-)
   * [Bibliograph compilation (for Texmaker)](#bibliograph-compilation--for-texmaker-)
  <!-- \END TOC -->
+
+# TL;DR
+- Download MikTeX and a tex IDE such as Texmaker
+- Download the files in folders titled eithre "Thesis Proposal" 1, 2, or 3 depending on your preference or needs
+- Load the main.tex file, found in the main folder, in your IDE of choice 
+- Using Texmaker, press F6, or the Quikbuild icon at the top of the IDE to compile the code
+- Press F7, or alternatively open the pdf file that is made from the compilation.
+- Edit as necessary
 
 # Getting started
 There are two fundamental categories for digital document writing. The first is plain text, where formatting is done through code. The second are word processors, documents that hide most to all of the formatting away from the user such that they experience an interface known as WYSIWYG (what you see is that you get), where bolded words are literally bolded on your document.
@@ -282,7 +291,7 @@ Whether writing a large lab report, thesis, or book, or even sharing parts of th
 For either preference, you need to organize your file structure intelligently; this is where paths come in, and your knowledge of them will greatly speed-up your workflow. The method I employ to break-up my document is to use the file structure below. 
 
 <div>	
-<img align="right" src="/_images/file_h_method1.PNG">
+<img align="right" src="/_images/file_h_method1.1.PNG">
 </div>
 
 \> _root directory_&nbsp;
@@ -290,8 +299,6 @@ For either preference, you need to organize your file structure intelligently; t
 	- bib_example.bib
 * **images**
 	- img_example.jpg, etc.
-* **tables**
-	- table.tex, etc.
 * **main**
 	- main.tex
 	- titlepage.tex
@@ -301,6 +308,8 @@ For either preference, you need to organize your file structure intelligently; t
 	- section 1
 	- section 2
 	- ...
+* **tables**
+  - table.tex, etc.  
 
 The take away is that there is a main document called _main.tex_ which will act as a linker that pulls in different components of the LaTeX document, e.g. the preamble, the titlepage (optional), a refextdoc (reference external document) package that allows you to cross reference your sections (more on this later), and finally a completely new directory containing all the sections that make up the content of your document, which we will call subfiles.
 
@@ -378,7 +387,7 @@ root&nbsp;
 	- refextdoc.sty
 	- **sections**
 		- section 1
-		- setionc 2
+		- section 2
 		- ...
 
 Fixable! In particular for images, you can use the _graphicspath_ package. In this case, you would have to duplicate the paths to the images folder using.
@@ -403,8 +412,17 @@ Where `../` is for the main document, and `../../` is for the subfiles (they liv
 ## Basic compilation (for Texmaker)
 Quickbuild allows you to compile using default settings. The Quickbuild option can be modified in settings 
 ![](./)
-If using Texmaker, you can type F6 to compile
-You can then visualize the compiled document using F7
-Caveats are that 
+If using Texmaker, you can press F6 to compile
+You can then visualize the compiled document using F7. If there are question marks or errors 
 
 ## Bibliograph compilation (for Texmaker)
+Pulling all of the pieces for building the tex document, inlcuding the bibliographies, external references, table of content, images, and tables requires some bit of work on the compiler side. Therefore, to compile the entire document correctly there are a few compilation hoops to go through. They are
+
+- make an initial compilation (PdfLaTeX)
+- compile the bibliographies (Bib(la)tex)
+- combine the compilations made from the bibliographies and pdf, but do this twice! (PdfLaTeX x2)
+- view the pdf
+
+Because these commands are a hassle to do individually, you can program the Quick Build command to perform all said tasks at a click of the button. Therefore, the commands F6 and F7 to perform basic compilation and viewing can be done for debugging purposes, but for finalizing and submitting the document use the QuickBuild command locate at the top of the TexMaker IDE.
+
+![](./_images/texmaker-quickbuild.png)
