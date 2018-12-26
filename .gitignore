@@ -11,3 +11,5 @@ _testing
 *.out
 *.syn*
 *.toc
+
+*.ini
