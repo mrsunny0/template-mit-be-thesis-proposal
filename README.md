@@ -36,19 +36,19 @@
 # Getting started
 There are two fundamental categories for digital document writing. The first is plain text, where formatting is done through code. The second are word processors, documents that hide most to all of the formatting away from the user such that they experience an interface known as WYSIWYG (what you see is that you get), where bolded words are literally bolded on your document.
 
-\(\LaTeX\)  is one of the more sophisticated types of document writing, plain text using markup tagging to define general structure and code for the document. For example, `\textbf{XYZ}` means to bold *XYZ*. What
-makes \(\LaTeX\)  an attractive platform for document writing is control and consistency. We will see the power of LaT\(\LaTeX\) eX as we go further in this README, and hopefully show you the benefits of learning such a powerful word editing tool.
+LaTeX  is one of the more sophisticated types of document writing, plain text using markup tagging to define general structure and code for the document. For example, `\textbf{XYZ}` means to bold *XYZ*. What
+makes LaTeX  an attractive platform for document writing is control and consistency. We will see the power of LaTeX eX as we go further in this README, and hopefully show you the benefits of learning such a powerful word editing tool.
 
 ## Setting it up
-There are two pieces to setting up \(\LaTeX\)  on your local computer
-* A \(\LaTeX\)  compiler (for either Windows or Mac). This takes what you write, and converts it into a clean and professional document.
-* Optional, although highly recommended, a \(\LaTeX\)  IDE (integrated development environment) where you can type and compile your code in one software enviornment (much like using Word).
+There are two pieces to setting up LaTeX on your local computer
+* A LaTeX  compiler (for either Windows or Mac). This takes what you write, and converts it into a clean and professional document.
+* Optional, although highly recommended, a LaTeX  IDE (integrated development environment) where you can type and compile your code in one software enviornment (much like using Word).
 
 ## Downloads
-* \(\LaTeX\)  compiler
+* LaTeX  compiler
 	- PC: [MikTex](https://miktex.org/download)
 	- Mac: [MacTex](http://www.tug.org/mactex/)
-* \(\LaTeX\)  IDE (in order of _my_ preference)
+* LaTeX  IDE (in order of _my_ preference)
 	- [TeXmaker](http://www.xm1math.net/texmaker/)
 	- [TeXstudio](https://www.texstudio.org/)
 	- [TeXworks](http://www.tug.org/texworks/) (this is automatically installed with most TeX compiler installations)
@@ -66,7 +66,7 @@ The first are paths. Typically all operating systems will have a GUI that lets y
 <img src="./_images/example_file_dir.PNG" width="50%">
 </div>
 
-\(\LaTeX\) , and mostly all code-based software don't have this GUI interaction. However, knowing where your documents and files are stored is essential, so we have to follow some rules and master file navigation without a GUI.
+LaTeX, and mostly all code-based software don't have this GUI interaction. However, knowing where your documents and files are stored is essential, so we have to follow some rules and master file navigation without a GUI.
 
 ## Knowing what _paths_ are
 So instead of clicking your way through folders, you have to instead tell (_aka_ manually type out) the path that you want to go to. Much like giving directions to your computer. However, much like navigation, directions are relative to where you are. The directory (i.e. folder) you are currently located in is called the _*root*_ directory; however, if you jump to another directory, the new directory is now your _root_ directory.
