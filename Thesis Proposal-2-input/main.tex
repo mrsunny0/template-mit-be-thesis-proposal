@@ -10,8 +10,7 @@
 % note the relative import. Because subfiles (e.g. abstract, introduction, etc.)
 % are located in separate files, for all files to be obtainable by main and subfiles,
 % need to tranverse up to the root directory (../) then back to the appropriate files in /main
-\usepackage{../main/preamble}
-\usepackage{../main/refextdoc}
+\usepackage{preamble}
 
 % relative imports of images
 % note that graphics path should be encased in {}, ends with / to define directory, 
@@ -19,7 +18,7 @@
 % therefore graphicsspath should look like \graphiscpath{{abc/},{xyz/},{123/}}
 % spaces in directory names are not recommended, however the the \usepackage[space]{grffile}
 % will attempt to work with directories with spaces
-\graphicspath{{../images/}}
+\graphicspath{{./images/}}
 
 %---------------------------------------------------------------------------%
 %								Begin Document								%
@@ -54,27 +53,27 @@
 %-------------------------------------------------------------------------------------------------------------%
 % Abstract
 %-------------------------------------------------------------------------------------------------------------%
-\input{../sections/abstract}
+\input{abstract}
 
 %-------------------------------------------------------------------------------------------------------------%
 % Objective
 %-------------------------------------------------------------------------------------------------------------%
-\input{../sections/objective}
+\input{objective}
 
 %-------------------------------------------------------------------------------------------------------------%
 % Background
 %-------------------------------------------------------------------------------------------------------------%
-\input{../sections/background}
+\input{background}
 
 %-------------------------------------------------------------------------------------------------------------%
 % Research Design & Methods
 %-------------------------------------------------------------------------------------------------------------%
-\input{../sections/methods}
+\input{methods}
 
 %-------------------------------------------------------------------------------------------------------------%
 % Preliminary Results
 %-------------------------------------------------------------------------------------------------------------%
-\input{../sections/results}
+\input{results}
 
 %-------------------------------------------------------------------------------------------------------------%
 % Example citation
@@ -123,7 +122,7 @@ This is a random citation \cite{nrtagu2001arsenic,lessler1988lead}
 %---------------------------------------------------------------------------------------------%
 \newpage
 \appendix
-\input{../sections/appendix}
+\input{appendix}
 
 %---------------------------------------------------------------------------%
 %								 End Document								%

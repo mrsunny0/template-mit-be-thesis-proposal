@@ -1,6 +1,11 @@
 _basic\ template
 _testing
 
+**/_prev
+
+extra.md
+README_prev.md
+
 *.log
 *.aux
 *.bbl
